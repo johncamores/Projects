@@ -62,6 +62,9 @@ data = yf.download(
         proxy = None
     )
 
+#UPDATE: Deprecated - Use st.pyplot(fx) instead
+st.set_option('deprecation.showfileUploaderEncoding', False)
+
 # Plot Closing Price of Query Symbol
 def price_plot(symbol):
   df = pd.DataFrame(data[symbol].Close)
