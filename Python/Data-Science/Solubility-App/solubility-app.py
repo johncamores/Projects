@@ -58,7 +58,6 @@ def generate(smiles, verbose=False):
 ######################
 # Page Title
 ######################
-st.title("Solubility App")
 
 st.write("""
 # Molecular Solubility Prediction Web App
