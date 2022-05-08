@@ -5,7 +5,6 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 import pickle
-from PIL import Image
 from rdkit import Chem
 from rdkit.Chem import Descriptors
 
@@ -59,10 +58,7 @@ def generate(smiles, verbose=False):
 ######################
 # Page Title
 ######################
-
-image = Image.open('solubility-logo.jpg')
-
-st.image(image, use_column_width=True)
+st.title("Solubility App")
 
 st.write("""
 # Molecular Solubility Prediction Web App
